@@ -3,6 +3,21 @@
     margin: 0;
 }
 
+
 .navbar {
-    background-color: rgb(102, 153,204)
+    background-color: #283B5B;
+    color: white;
+}
+
+.nav-item {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.navbar-nav > a:hover {
+    color: #7cd3ed;
+}
+
+.jumbotron {
+    background-color: #283B5B;
 }

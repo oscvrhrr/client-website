@@ -4,20 +4,56 @@
 }
 
 
+ .greet {
+    position: absolute;
+    top: 125px;
+    left: 100px;
+
+}
+
+.greettwo {
+    position:absolute;
+    top: 175px;
+    left: 100px;
+}
+
+.greetthree {
+    position:absolute;
+    top: 250px;
+    left: 100px;
+    max-width: 450px;
+    word-wrap: break-word;
+
+}
+
 .navbar {
-    background-color: #283B5B;
+    background-color:#283B5B;
     color: white;
 }
 
 .nav-item {
-    color: white;
-    font-weight: bold;
-    font-family: sans-serif;
+    color:  white;
 }
-.navbar-nav > a:hover {
-    color: #7cd3ed;
+
+.nav-item:hover {
+    color: #1bafdb;
 }
 
 .jumbotron {
     background-color: #283B5B;
+    font-family: sans-serif;
+    
 }
+
+.aboutme {
+    height: 500px;
+    color: #283B5B;
+}
+
+.portrait {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+    
+

@@ -1,59 +1,520 @@
-* {
-    padding:0;
+*,
+*::before,
+*::after {
+        box-sizing: border-box;
+
+}
+
+    /* CUSTOM PROPERTIES */
+
+:root {
+    --ff-primary: sans-serif;
+    --ff-secondary: monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #F6E8CB;
+    --clr-dark: #303030;
+    --clr-accent: #F26419;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    
+
+}
+
+@media only screen and (min-width:800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* GENERAL STYLES */
+
+body {
+    background-color: #F6E8CB;
+    color: #303030;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    margin: 0;
+    line-height: 1.6;
+
+}
+
+
+
+img {
+    display: block;
+    max-width: 100%;
+
+
+
+}
+    
+/*  TYPOGRAPHY */
+
+h1,
+h2,
+h3 {
+
+    line-height: 1.1;
     margin: 0;
 }
 
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
 
- .greet {
-    position: absolute;
-    top: 125px;
-    left: 100px;
+nav {
+ display: none;
+}
+
+p {
+    max-width: 14rem;
+    margin: 0 auto;
+    font-size: .75rem;
 
 }
 
-.greettwo {
-    position:absolute;
-    top: 175px;
-    left: 100px;
-}
-
-.greetthree {
-    position:absolute;
-    top: 250px;
-    left: 100px;
-    max-width: 450px;
-    word-wrap: break-word;
+input {
 
 }
 
-.navbar {
-    background-color:#283B5B;
+figcaption {
+    text-align: center;
+    font-size: .55rem;
+}
+
+footer {
+    background-color: #232F2B;
+    color: #fff;
+    min-height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+
+}
+
+
+
+.section--title__intro {
+    margin: 9rem auto 0;
+    width: 15rem;
+    font-size: 2.05rem;
+    text-align: center;
+
+}
+
+
+.paragraph__intro {
+    margin: 1rem auto;
+    width: 13.75rem;
+    text-align: center;
+
+
+}
+
+.image__capsule {
+    margin: 1rem auto;
+    height: 13rem;
+    width: 8rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    object-fit: contain;
+
+}
+
+.image__intro {
+    object-fit: cover ;
+    height: 100%;
+    width: 100%;
+
+}
+
+.container--button__intro {
+    display: flex;
+    justify-content: center;
+}
+
+.button__intro {
+    background-color: #F26419;
     color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 0 1rem;
+    width: 5.3rem;
+    height: 1.75rem;
 }
 
-.nav-item {
-    color:  white;
+.tech--stack {
+    background-color: #57756B;
+
 }
 
-.nav-item:hover {
-    color: #1bafdb;
+.tech--stack__title {
+
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem;
 }
 
-.jumbotron {
-    background-color: #283B5B;
-    font-family: sans-serif;
+.tech--row{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tech--stack__container {
+    margin: 2rem;
+    display: inline-flex;
+    flex-direction: column;
     
 }
 
-.aboutme {
-    height: 500px;
-    color: #283B5B;
+.ellipse {
+    background-color: white;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+
 }
 
-.portrait {
-    position: absolute;
-    top: 50px;
-    left: 100px;
+
+.section--title__about-me {
+    text-align: center;
+    margin: 2rem 0;
 }
+
+.section--subtitle__about-me {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.image__ellipse {
+    height:11rem;
+    width: 11rem;
+    border-radius: 50%;
+    margin: 3rem auto;
+    overflow: hidden;
+}
+
+.my-projects {
+    background-color: #57756B;
+    min-height: 70rem;
+
+}
+
+.section--title__projects {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+.project--container {
+    background-color: orange;
+    height: 15.5rem;
+    width:11rem;
+    border-radius: 8px;
+    margin: 1rem auto;
+    overflow: hidden;
+
+}
+
+.image--project {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.button--project {
+    background-color: #F26419;
+    color: white;
+    display: block;
+    margin:  0 auto;
+    padding: 0%;
+    height: 2.25rem;
+    width: 6rem;
+    border-radius: 5px;
+}
+
+.contact-me {
+    background-color: #FCF7ED;
+}
+
+.container--map {
+    height: 15.5rem;
+    width: 15.5rem;
+    overflow: hidden;
+    margin: 2rem auto;
+}
+
+.image--map {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.section--title__contact {
+    text-align: center;
+    padding: 3rem;
+
+}
+
+.section--subtitle__title {
+    text-align: center;
+    margin: 2rem;
+
+
+}
+
+.form-container {
+    max-width: 15rem;
+    margin: 0 auto;
+
+
+}
+
+.form-control {
+    display: block;
+    min-width: 15rem;
+    max-width: 15rem;
+    margin: .75rem auto;
+    padding: 1rem;
+
+
+
+}
+
+.button-form {
+    background-color: #F26419;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 1rem 0;
+    width: 9.25rem;
+    height: 2.25rem;
+    padding: 0%;
+}
+
+.copyright {
+    margin: 0%;
+    padding: 2rem 0;
+    max-width: 16rem;
+    font-size: .85rem;
+}
+
+/* TABLET LAYOUT 8 */ 
+
+@media only screen and (min-width:575px) and (max-width: 1023px){
+
+    /* INTRODUCTON */
+
+    figcaption {
+        font-size: 1rem;
+    }
+
+    .intro {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .section--title__intro{
+
+    }
+
+    .section--title__intro, 
+    .paragraph__intro,
+    .container--button__intro
+     {
+        text-align: left;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 0 0 5rem 0;
+
+
+    }
+
+    .paragraph__intro {
+        margin: 1rem 0;
+    }
+
+    .button__intro {
+        margin: 0 2rem 0 0;
+    }
+
+    .image__capsule {
+        margin: 1rem auto;
+        height: 20rem;
+        max-width: 10.5rem;
+        border-radius: 5rem;
+        overflow: hidden;
+        object-fit: contain;
+    }
+
+    .ellipse {
+        background-color: white;
+        border-radius: 50%;
+        height: 4.25rem;
+        width: 4.25rem;
+        overflow: hidden;
     
+    }
+
+    .container-about-me {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        margin: 0 auto;
+
+    }
+
+    .image__ellipse {
+        height: 14.75rem;
+        width: 14.75rem;
+        float: left;
+        margin: 3rem 0 0 8rem;
+    }
+
+    .my-projects{
+        min-height: 35rem;
+    }
+
+    .section--subtitle__about-me,
+    .about-me p {
+        text-align: left;
+    }
+
+    .project-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+
+/* DESKTOP LAYOUT */
+
+@media only screen and (min-width:1024px) and (max-width:1445px) {
+
+    figcaption {
+        font-size: 1rem;
+    }
+
+    .flex-container {
+        display: grid;
+        grid-template-rows: 1fr 8rem 4rem 3rem 1fr;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        margin: 0%;
+
+
+    }
+    
+    .section--title__intro {
+        grid-area: 2 / 3 / 2 / span 4 ;
+        margin: 0%;
+
+        text-align: left;
+        font-size: 4rem;
+        min-width: 30rem;
+    }
+
+    .paragraph__intro{
+        grid-area: 3 / 3 / 3 / span 3;
+        margin: 0%;
+        text-align: left;
+        min-width: 30rem;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .container--button__intro {
+        grid-area: 4 / 2 / 4 / span 3 ;
+        margin-left: 5rem;
+
+
+
+    }
+
+    .button__intro {
+        background-color: #F26419;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 0 1rem;
+    width: 8.1rem;
+    height: 2.5rem;
+    }
+
+    .image__capsule {
+        grid-area: 1 / 8 / span 5 / span 3 ;
+        margin: 0%;
+        height: 28.75rem;
+        width: 15.6rem;
+        border-radius: 129px;
+
+    }
+    
+    
+
+
+
+    .ellipse {
+        background-color: white;
+        border-radius: 50%;
+        height: 4.25rem;
+        width: 4.25rem;
+        overflow: hidden;
+    
+    }
+
+    .container-about-me {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        margin: 0 auto;
+
+    }
+
+    .image__ellipse {
+        height: 14.75rem;
+        width: 14.75rem;
+        float: left;
+        margin: 3rem 0 0 8rem;
+    }
+
+    .my-projects{
+        min-height: 35rem;
+    }
+
+    .section--subtitle__about-me,
+    .about-me p {
+        text-align: left;
+    }
+
+    .project-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}
+
+
 

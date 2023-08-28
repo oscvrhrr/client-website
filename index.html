@@ -1,98 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title> OHDEV </title>
-    <link rel="stylesheet" href="/styles.css" />
 
- 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Oscar Herrera </title>
+        <link rel="stylesheet" href="/styles.css" />
+
     </head>
 
 
     <body>
-        <!-- navbar component-->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid mx-5 my-3">
-                <a class="navbar-brand text-white"> <img class=" " src="./img/Logo.png" width="50" height="auto"> OHDEV </a>
-                <button class="navbar-toggler collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle-navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
+    
+        <header>
+            <div class="logo-box">
+                <div class="logo" alt="">OSCAR.DEV</div>
+            </div>
+
+            <nav class="nav">
+
+                <ul class="nav-list">
             
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="navbar-nav ms-auto fw-bold">
-                        
-                        <a class="nav-item nav-link fs-5 active" href="#Home">Home</a>
-                        <a class="nav-item nav-link fs-5 " href="#About">About</a>
-                        <a class="nav-item nav-link fs-5 " href="#Projects">Projects</a>
-                        <a class="nav-item nav-link fs-5 " href="">Contact</a>
-                
+                    <li class="nav-item"><a href="#one" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#two" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#three" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#four" class="nav-link">Contact Me</a></li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+    
+        <!-- INTRODUCTION -->
+        <main>
+            <div class="intro">
+                <div class="flex-container">
+                    <h1 class="section--title section--title__intro">Front-end<br> Web Developer</h1>
+                    <p class=" paragraph__intro"> Hello there! My name is Oscar! I’m a Chicago based web developer deeply impassioned by the art and science of web development</p>
+                    <div class="container--button__intro">   
+                        <a><button class="button__intro">Contact</button></a>
+                        <a><button class="button__intro">Projects</button></a>
                     </div>
-                 
-                </div>
-                        
-
-
-                
-            </div>
-        </nav>
-
-        <!--Jumbotron Component-->
-        <div class="jumbotron" style=" height: 550px; width: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-white bg-primary position-relative ">
-                        <h1 class="greet fw-bold display-5"> Front-end </h1>
-                        <h2 class="greettwo fw-bold display-5"> Developer </h2>
-                        <p class=" greetthree">I'm a Chicago based Web Developer that enjoys building products with great user experiences</p>
-
-                    </div>
-                    <div class="col boss position-relative">
-                        <img class="rounded portrait" src="./img/portrait.jpg" width="auto"height="325" >
-    
-    
-    
-    
-    
-    
-                    </div>
-
+                    <div class="image__capsule"><img class="image__intro" src="./img/crop2.jpg"></div>
 
                 </div>
-                
-            </div>
-        </div>
-        <!--About ME Section-->
-        <div class="aboutme row bg-white" style="">
-            <div class="col text-center mt-5">
-                <p class="display-5 fw-bold">
-                About Me
-                </p>
-            </div>
-            <div class="col">
-
+            
             </div>
 
+        </main>
+        <section class="tech--stack">
+            <h2 class="tech--stack__title">Tech Stack</h2>
+            <div class="tech--row">
+                <figure class="tech--stack__container">
+                    <div class="ellipse"><img src="./img/icons/html.png"></div>
+                    <figcaption>HTML</figcaption>
+                </figure>
+                <figure class="tech--stack__container">
+                    <div class="ellipse"><img src="./img/icons/css.png"></div>
+                    <figcaption>CSS</figcaption>
+                </figure>
+                <figure class="tech--stack__container">
+                    <div class="ellipse"><img src="./img/icons/javascript.png"></div>
+                    <figcaption>Javascript</figcaption>
+                </figure>
+            </div>
+            <div class="tech--row">
+                <figure class="tech--stack__container">
+                    <div class="ellipse"><img src="./img/icons/react.png"></div>
+                    <figcaption>React</figcaption>
+                </figure>
+                <figure class="tech--stack__container">
+                    <div class="ellipse"><img src="./img/icons/git.png"></div>
+                    <figcaption>Git</figcaption>
+                </figure>
+                <figure class="tech--stack__container">
+                    <div class="ellipse"><img src="./img/icons/github.png"></div>
+                    <figcaption>Github</figcaption>
+                </figure>
+            </div>
 
 
 
-        </div>
-        
+        </section>
+
+        <!-- ABOUT ME -->
+        <section class="about-me">
+            <h2 class="section--title section--title__about-me">About me</h2>
+            <div class="image__ellipse container-about-me"><img src="./img/tahoe.webp"></div>
+            <div class="container-about-me">
+                <h3 class="section--subtitle__about-me">Hello I'm<br> Oscar Herrera</h3>
+            
+                <p> Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+        </section>
 
 
 
+        <!-- MY PROJECTS-->
+        <section class="my-projects">
+            <h2 class="section--title section--title__projects">Latest Projects</h2>
+            <div class="project-flex">
+                <div>
+                    <div class="project--container"><img class="image--project" src="./img/holder 1.png"></div>
+                    <a><button class="button--project">Go To Project</button></a>
 
+                </div>
 
+                <div>
+                    <div class="project--container"><img class="image--project" src="./img/holder2.png"></div>
+                    <a><button class="button--project">Go To Project</button></a>
 
+                </div>
 
-        
+                <div>
+                    <div class="project--container"><img class="image--project" src="./img/holder 3.png"></div>
+                    <a><button class="button--project">Go To Project</button></a>
 
+                </div>
+            </div>
+        </section>
 
     
+        
+        
+        <!-- CONTACT ME-->
+        <section class="contact-me">
+            <h2 class="section--title__contact">Get In Touch</h2>
+            <div class="container--map"><img class="image--map" src="./img/map contact.jpeg"></div>
+            <h3 class="section--subtitle__title">CONTACT ME</h3>
+            <form>
+                <div class="form-container">
+                    <input class="form-control" placeholder="Name" type="text"  required>
+                    <input class="form-control" placeholder="Email" type="email"  required>
+                    <textarea class="form-control" placeholder="Your Message here" type="message" rows="8"></textarea>
+                    <button class="button-form" type="submit">SEND MESSAGE</button>
+                </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
+            </form>
+            
+
+
+
+
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="copyright">
+                All rights reserved © 2023 Oscar Herrera
+            </div>
+        </footer>
     </body>
 </html>

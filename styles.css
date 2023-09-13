@@ -105,6 +105,7 @@ footer {
 }
 /* nav bar styles */
 .nav-bar {
+    position: relative;
     display: flex;
     min-height: 5rem;
     padding-top: 1rem;
@@ -135,12 +136,11 @@ cursor: pointer;
 }
 
 .nav-menu {
-position: fixed;
+position: absolute;
 width: 100%;
 top: 5rem;
-background-color: hsla(160, 15%, 40%, .7);
+background-color: hsla(160, 15%, 40%, .9);
 
-margin: 0 auto;
 }
 
 .nav-menu a {

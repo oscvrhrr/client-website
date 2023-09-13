@@ -72,9 +72,6 @@ h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
-nav {
-
-}
 
 a {
     text-decoration: none;
@@ -267,6 +264,10 @@ display: none;
     overflow: hidden;
 }
 
+.project-flex--item {
+    padding-bottom: 2rem;
+}
+
 .my-projects {
     background-color: #57756B;
     min-height: 70rem;
@@ -311,8 +312,8 @@ display: none;
 }
 
 .container--map {
-    height: 15.5rem;
-    width: 15.5rem;
+    height: 20rem;
+    width: 20rem;
     overflow: hidden;
     margin: 2rem auto;
 }
@@ -338,7 +339,7 @@ display: none;
 }
 
 .form-container {
-    max-width: 15rem;
+    max-width: 20rem;
     margin: 0 auto;
 
 
@@ -346,9 +347,9 @@ display: none;
 
 .form-control {
     display: block;
-    min-width: 15rem;
-    max-width: 15rem;
-    margin: .75rem auto;
+    min-width: 20rem;
+    max-width: 20rem;
+    margin: 1rem auto;
     padding: 1rem;
 
 
@@ -389,9 +390,6 @@ display: none;
         align-items: center;
     }
 
-    .section--title__intro{
-
-    }
 
     .section--title__intro, 
     .paragraph__intro,

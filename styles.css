@@ -201,6 +201,10 @@ display: none;
 
 }
 
+.image-capsule--text {
+    
+}
+
 .image__intro {
     object-fit: cover ;
     height: 100%;
@@ -221,6 +225,38 @@ display: none;
     margin: 0 1rem;
     width: 7.5rem;
     height: 2.25rem;
+}
+
+/*  TECHSTACK SECTION */
+
+.tech-section {
+    background-color: #303030;
+    padding: 4rem 0;
+}
+
+.media-scroller {
+display: flex;
+align-items: center;
+overflow-x: auto;
+
+
+}
+
+.media-scroller::-webkit-scrollbar {
+    width: 0;
+}
+
+.media-element {
+
+    min-width: 8rem;
+    margin: 0 3rem;
+
+}
+
+.media-element img {
+    height: 5rem;
+    width: 5rem;
+    object-fit: contain;
 }
 
 .tech--stack {

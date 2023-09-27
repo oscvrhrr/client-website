@@ -241,13 +241,15 @@ display: none;
 .media-scroller {
 display: flex;
 align-items: center;
-overflow-x: hidden;
+overflow-x: auto;
 
 
 }
 
 .media-scroller::-webkit-scrollbar {
     width: 0;
+    background-color: transparent;
+
 }
 
 .media-element {

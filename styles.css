@@ -249,7 +249,7 @@ overflow-x: auto;
 .media-scroller::-webkit-scrollbar {
     width: 0;
     background: transparent;
-
+    display: none;
 }
 
 .media-element {

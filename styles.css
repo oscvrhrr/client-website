@@ -104,6 +104,10 @@ footer {
 
 }
 /* nav bar styles */
+.intro {
+    padding-bottom: 2rem;
+}
+
 .nav-bar {
     position: relative;
     display: flex;
@@ -294,6 +298,9 @@ overflow-x: auto;
 
 }
 
+.about-me {
+    padding-bottom: 3rem;
+}
 
 .section--title__about-me {
     text-align: center;

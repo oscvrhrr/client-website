@@ -241,7 +241,7 @@ display: none;
 .media-scroller {
 display: flex;
 align-items: center;
-overflow-x: auto;
+overflow-x: hidden;
 
 
 }

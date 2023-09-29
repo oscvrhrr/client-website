@@ -196,8 +196,8 @@ display: none;
 
 .image__capsule {
     margin: 3rem auto;
-    height: 22rem;
-    width: 14rem;
+    height: 25rem;
+    width: 18rem;
     border-radius: 10rem;
     overflow: hidden;
     object-fit: contain;
@@ -315,8 +315,7 @@ overflow-x: auto;
 }
 
 .image__ellipse {
-    height:11rem;
-    width: 11rem;
+    width: 20rem;
     border-radius: 50%;
     margin: 3rem auto;
     overflow: hidden;

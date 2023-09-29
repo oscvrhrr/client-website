@@ -39,8 +39,6 @@
 /* GENERAL STYLES */
 
 body {
-    background-color: #F6E8CB;
-    color: #303030;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     margin: 0;
@@ -94,7 +92,7 @@ figcaption {
 }
 
 footer {
-    background-color: #232F2B;
+    background-color: #303030;
     color: #fff;
     min-height: 15rem;
     display: flex;
@@ -106,15 +104,17 @@ footer {
 /* nav bar styles */
 .intro {
     padding-bottom: 2rem;
+    background-color: #385238;
 }
 
 .nav-bar {
     position: relative;
     display: flex;
     min-height: 5rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
+    background-color: #385238;
 
 
 }
@@ -128,12 +128,9 @@ footer {
 }
 
 .logo-box {
-
+    padding: 2rem;
     max-width: 5.5rem;
-
-    padding-bottom: .9rem;
-
-
+    color: white;
 }
 
 
@@ -179,10 +176,11 @@ display: none;
 /* begining of section */
 
 .section--title__intro {
-    margin: 2rem auto ;
+    margin: auto ;
     min-width: 20rem;
     font-size: 2.25rem;
     text-align: center;
+    color: white;
 
 }
 
@@ -191,6 +189,7 @@ display: none;
     margin: 1.5rem auto;
     min-width: 15.75rem;
     text-align: center;
+    color: white;
 
 
 }
@@ -301,12 +300,13 @@ overflow-x: auto;
 }
 
 .about-me {
-    padding-bottom: 3rem;
+    padding-bottom: 10rem;
+    background-color: #FCF7ED;
 }
 
 .section--title__about-me {
     text-align: center;
-    margin: 2rem 0;
+    padding: 2rem 0;
 }
 
 .section--subtitle__about-me {
@@ -327,14 +327,13 @@ overflow-x: auto;
 }
 
 .my-projects {
-    background-color: #57756B;
+    background-color: #385238;
     min-height: 70rem;
 
 }
 
 .section--title__projects {
     text-align: center;
-    margin: 2rem 0;
     padding: 2rem 0;
 }
 

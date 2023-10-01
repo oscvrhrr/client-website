@@ -164,6 +164,7 @@ background-color: hsla(160, 15%, 40%, .9);
     text-decoration: none;
     color: #232F2B;
 
+
 }
 
 .nav-menu a:hover {
@@ -171,8 +172,10 @@ background-color: hsla(160, 15%, 40%, .9);
 }
 
 .hide {
-display: none;
+    display: none;
 }
+
+
 /* begining of section */
 
 .section--title__intro {
@@ -524,6 +527,53 @@ overflow-x: auto;
 /* DESKTOP LAYOUT */
 
 @media only screen and (min-width:1024px) and (max-width:1445px) {
+
+    /*.intro {
+        min-height: 42rem;
+    }
+    */
+
+    .nav-bar {
+        display: flex;
+    }
+    
+    .logo-box {
+        padding: 2rem;
+        max-width: 5.5rem;
+        color: white;
+    }
+    
+    
+    .nav-menu {
+        position: static;
+        display: flex;
+        background-color: #385238;
+        width: 31rem;
+        justify-content: space-around;
+        padding: 1rem 4rem 0 0;
+        font-weight: 900;
+
+    
+    }
+    
+    .nav-menu a {
+        color: white;
+        display: inline-block
+
+    
+    }
+    
+    .nav-menu a:hover {
+        color: #F26419;
+        background-color: #385238;
+    }
+    
+
+    .hamburger-menu {
+        display: none;
+    }
+
+
 
     figcaption {
         font-size: 1rem;

@@ -135,17 +135,21 @@ footer {
 
 
 .hamburger-menu {
-    padding-right: 1rem;
+    margin-right: 1rem;
+    padding: .75rem .65rem .35rem .65rem;
     cursor: pointer;
+    border: .5px solid white;
+    border-radius: 5px;
 }
 
 .hamburger-menu .line {
 display: block;
 height: 2px;
-width: 2.5rem;
-margin-bottom: 10px;
-background-color: #232F2B;
+width: 1.55rem;
+margin-bottom: 6px;
+background-color: #fff;
 cursor: pointer;
+
 }
 
 .nav-menu {

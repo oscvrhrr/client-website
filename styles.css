@@ -304,7 +304,7 @@ overflow-x: auto;
 }
 
 .about-me {
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
     background-color: #F9EFDC;
     display: flex;
     flex-direction: column;
@@ -339,7 +339,7 @@ overflow-x: auto;
     position: absolute;
     width: 8rem;
     left: 15.5rem;
-    bottom: -43rem;
+    bottom: -53rem;
     border-radius: 5px;
     max-height: 10rem;
 }
@@ -349,7 +349,7 @@ overflow-x: auto;
     max-width: 22rem;
     font-size: 1.25rem;
     margin: 0 auto 1rem ;
-    line-height: 1.475;
+    line-height: 1.35;
 
 }
 

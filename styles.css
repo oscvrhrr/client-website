@@ -304,6 +304,7 @@ overflow-x: auto;
 }
 
 .about-me {
+    padding-top: 5rem;
     padding-bottom: 8rem;
     background-color: #F9EFDC;
     display: flex;
@@ -315,31 +316,30 @@ overflow-x: auto;
 .section--title__about-me {
     font-size: 1.5rem;
     max-width: 22rem;
-    margin: 3rem auto 1rem;
+    margin: 7rem auto 1rem;
 }
 
 .section--subtitle__about-me {
     text-align: left;;
     font-size: 2rem;
     max-width: 22rem;
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem;
 
 }
 
+
 .top-image img {
-    width: 20rem;
+    width: 22rem;
     margin: 0 auto;
-    padding: 5rem 0;
-    overflow: hidden;
     position: relative;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .bottom-image img {
     position: absolute;
     width: 8rem;
-    left: 15.5rem;
-    bottom: -53rem;
+    left: 16.5rem;
+    bottom: -55rem;
     border-radius: 5px;
     max-height: 10rem;
 }
@@ -350,11 +350,13 @@ overflow-x: auto;
     font-size: 1.25rem;
     margin: 0 auto 1rem ;
     line-height: 1.35;
+    font-weight: lighter;
 
 }
 
 .container-about-me h3 {
     font-size: 1rem;
+    font-weight: 900;
     margin: 2.5rem 0 0 2.15rem;
     text-align: left;
     max-width: 22rem;

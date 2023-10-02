@@ -306,18 +306,23 @@ overflow-x: auto;
 .about-me {
     padding-bottom: 10rem;
     background-color: #F9EFDC;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .section--title__about-me {
-    text-align: left;
-    padding: 2rem 0 0 2rem;
     font-size: 1.5rem;
+    max-width: 22rem;
+    margin: 3rem auto 1rem;
 }
 
 .section--subtitle__about-me {
-    text-align: left;
-    margin: 1rem 2rem 2rem 2rem;
+    text-align: left;;
     font-size: 2rem;
+    max-width: 22rem;
+    margin: 0 auto 1rem;
 
 }
 
@@ -333,18 +338,18 @@ overflow-x: auto;
 .bottom-image img {
     position: absolute;
     width: 8rem;
-    margin: 3rem auto;
-    left: 14.25rem;
-    bottom: -48rem;
+    left: 15.5rem;
+    bottom: -43rem;
     border-radius: 5px;
     max-height: 10rem;
 }
 
 .container-about-me p {
     text-align: left;
-    max-width: 20rem;
-    font-size: 1rem;
+    max-width: 22rem;
+    font-size: 1.25rem;
     margin: 0 auto 1rem ;
+    line-height: 1.475;
 
 }
 
@@ -352,6 +357,8 @@ overflow-x: auto;
     font-size: 1rem;
     margin: 2.5rem 0 0 2.15rem;
     text-align: left;
+    max-width: 22rem;
+    margin: 2rem auto .5rem
 }
 
 .project-flex--item {

@@ -309,20 +309,49 @@ overflow-x: auto;
 }
 
 .section--title__about-me {
-    text-align: center;
-    padding: 2rem 0;
+    text-align: left;
+    padding: 2rem 0 0 2rem;
+    font-size: 1.5rem;
 }
 
 .section--subtitle__about-me {
-    text-align: center;
-    margin: 3rem 0;
+    text-align: left;
+    margin: 1rem 2rem 2rem 2rem;
+    font-size: 2rem;
+
 }
 
-.image__ellipse {
+.top-image img {
     width: 20rem;
-    border-radius: 50%;
-    margin: 3rem auto;
+    margin: 0 auto;
+    padding: 5rem 0;
     overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.bottom-image img {
+    position: absolute;
+    width: 8rem;
+    margin: 3rem auto;
+    left: 14.25rem;
+    bottom: -48rem;
+    border-radius: 5px;
+    max-height: 10rem;
+}
+
+.container-about-me p {
+    text-align: left;
+    max-width: 20rem;
+    font-size: 1rem;
+    margin: 0 auto 1rem ;
+
+}
+
+.container-about-me h3 {
+    font-size: 1rem;
+    margin: 2.5rem 0 0 2.15rem;
+    text-align: left;
 }
 
 .project-flex--item {
@@ -665,18 +694,20 @@ overflow-x: auto;
     
     }
 
+    /* ABOUT ME SECTION--DESKTOP*/
+
     .container-about-me {
         display: flex;
         flex-direction: column;
         max-width: fit-content;
         margin: 0 auto;
+        min-height: 35rem;
 
     }
 
     .image__ellipse {
         height: 14.75rem;
         width: 14.75rem;
-        float: left;
         margin: 3rem 0 0 8rem;
     }
 

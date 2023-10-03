@@ -452,8 +452,8 @@ overflow-x: auto;
 }
 
 .section--subtitle__title {
-    text-align: center;
-    margin: 2rem;
+    margin: 2rem 0 2rem 3.4rem;
+    font-size: 2rem;
 
 
 }

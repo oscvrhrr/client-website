@@ -388,18 +388,22 @@ overflow-x: auto;
     min-height: 70rem;
 
 }
+.project-flex {
+    padding-bottom: 6rem;
+}
 
 .section--title__projects {
     text-align: center;
-    padding: 2rem 0;
+    padding: 5rem 0;
+    padding-bottom: 8rem;
     font-size: 1.5rem;
 }
 
 .project--container {
-    height: 20rem;
-    width: 20rem;
+    height: 22rem;
+    width: 22rem;
     border-radius: 8px;
-    margin: 2rem auto;
+    margin: 0.25rem auto;
     overflow: hidden;
 
 }

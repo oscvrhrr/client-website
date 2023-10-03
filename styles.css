@@ -111,7 +111,6 @@ footer {
     position: relative;
     display: flex;
     min-height: 5rem;
-    padding-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
     background-color: #385238;
@@ -128,9 +127,9 @@ footer {
 }
 
 .logo-box {
-    padding: 2rem;
-    max-width: 5.5rem;
+    max-width: 7rem;
     color: white;
+    margin-left: .5rem;
 }
 
 
@@ -397,6 +396,7 @@ overflow-x: auto;
     padding: 5rem 0;
     padding-bottom: 8rem;
     font-size: 1.5rem;
+    color: white;
 }
 
 .project--container {
@@ -491,7 +491,7 @@ overflow-x: auto;
 
 .copyright {
     margin: 0%;
-    padding: 2rem 0;
+    padding: 3rem 0 2rem 0;
     max-width: 16rem;
     font-size: .85rem;
 }
@@ -500,6 +500,11 @@ overflow-x: auto;
     width: 1.5rem;
     height: 1.5rem;
     margin: .75rem;
+}
+
+.footer-logo {
+    max-width: 8rem;
+    padding: 1rem 0;
 }
 
 footer {

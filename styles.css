@@ -208,7 +208,7 @@ background-color: #fff;
     width: 18rem;
     border-radius: 10rem;
     overflow: hidden;
-    object-fit: contain;
+
 
 
 }
@@ -413,6 +413,7 @@ overflow-x: auto;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: top;
 }
 
 .button--project {
@@ -506,6 +507,10 @@ overflow-x: auto;
 .footer-logo {
     max-width: 8rem;
     padding: 1rem 0;
+}
+
+footer div a .footer-link:hover {
+    fill: #F26419;
 }
 
 footer {
@@ -620,6 +625,7 @@ footer div {
     
     .logo-box {
         min-width: 10rem ;
+        
         margin: 0%;
         padding: 0%;
         margin-left: 3rem;
@@ -633,6 +639,7 @@ footer div {
     .logo-box {
         max-width: 5.5rem;
         margin-left: 6.5rem;
+        max-height: 8.5rem;
     }
     
     

@@ -114,6 +114,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: #385238;
+    padding-bottom: .1rem;
 }
 
 .logo {
@@ -398,10 +399,16 @@ footer {
 }
 
 .container--map {
-    height: 20rem;
+    height: 25rem;
     width: 20rem;
     overflow: hidden;
     margin: 2rem auto;
+    border-radius: 8px;
+}
+
+#map {
+    height: 25rem;
+    width: 100%;
 }
 
 .image--map {
@@ -418,7 +425,7 @@ footer {
 }
 
 .section--subtitle__title {
-    margin: 2rem 0 2rem 3.4rem;
+    margin: 2rem 0 2rem 2rem;
     font-size: 2rem;
 }
 
@@ -805,6 +812,11 @@ footer div {
 
     .button-form {
         margin: 1rem 0 0 3rem;
+    }
+
+    #map {
+        height: 25rem;
+        width: 100%;
     }
 
 }

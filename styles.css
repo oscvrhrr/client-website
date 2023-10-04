@@ -619,9 +619,11 @@ footer div {
 
     
     .logo-box {
-        margin: 1rem 0 0 3rem;
-        font-weight: 900;
-        font-size: 1.25rem;
+        min-width: 10rem ;
+        margin: 0%;
+        padding: 0%;
+        margin-left: 3rem;
+
     }
 
     .nav-bar {
@@ -629,9 +631,8 @@ footer div {
     }
     
     .logo-box {
-        padding: 2rem;
         max-width: 5.5rem;
-        color: white;
+        margin-left: 6.5rem;
     }
     
     
@@ -755,13 +756,59 @@ footer div {
 
     /* ABOUT ME SECTION--DESKTOP*/
 
+    .about-me {
+        flex-direction:row;
+    }
+
+    .about-me div {
+        min-width: 50%;
+    }
+
+    .section--title__about-me{
+        max-width: none;
+        margin: 0 0 1rem 0;
+    }
+
+    .section--subtitle__about-me {
+        max-width: none;
+        margin: 0 0 2rem 0;
+    }
+
+    .container-about-me h3 {
+        max-width: none;
+        margin: 0%;
+    }
+
+    .container-about-me p {
+        max-width: 40rem;
+        margin-right: 5rem;
+
+    }
+
+    .about-me-subcontainer {
+        display: inline-flex;
+        flex-wrap: wrap;
+
+
+    }
+
     .container-about-me {
         display: flex;
         flex-direction: column;
         max-width: fit-content;
         margin: 0 auto;
         min-height: 35rem;
+        min-width: 50%;
 
+    }
+
+    .bottom-image img {
+        position: absolute;
+        width: auto;
+        left: 5rem;
+        bottom: -73rem;
+        border-radius: 5px;
+        max-height: 20rem;
     }
 
     .image__ellipse {

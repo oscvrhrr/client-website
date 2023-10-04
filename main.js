@@ -28,3 +28,9 @@ function initMap(){
     })
 
 }
+
+const techStack =  document.querySelector('.media-scroller');
+
+mediaScroller.addEventListener('scroll', () => {
+    
+})

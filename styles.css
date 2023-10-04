@@ -830,7 +830,46 @@ footer div {
         display: flex;
         justify-content: space-around;
     }
+    /* CONTACT SECTION*/
+    .section--subtitle__title {
+        margin: 2rem 0 0 3rem;
+    }
 
+    .container--map {
+        margin: 3rem 0 0 2rem;
+        width: 35rem;
+        height: 25.5rem;
+        border-radius: 10px;
+    }
+
+    .container-contact {
+        display: flex;
+        justify-content: space-around;
+
+
+
+    }
+
+    .form-container {
+        min-width: 100%;
+
+    }
+
+    .form-control {
+        margin: 1rem 0 0 3rem;
+        min-width: 39rem;
+    }
+
+    .form-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 50%;
+    }
+
+    .button-form {
+        margin: 1rem 0 0 3rem;
+    }
 
 }
 

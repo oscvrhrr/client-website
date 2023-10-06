@@ -27,6 +27,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media only screen and (min-width:800px) {
     :root {
         --fs-h1: 4.5rem;
@@ -162,6 +166,7 @@ footer {
     padding: 5px 0;
     text-decoration: none;
     color: #232F2B;
+
 }
 
 .nav-menu a:hover {
@@ -221,6 +226,7 @@ footer {
     height: 2.75rem;
     font-weight: bolder;
     font-size: .95rem;
+    transition: ;
 }
 
 /*  TECHSTACK SECTION */
@@ -616,7 +622,8 @@ footer div {
     
     .nav-menu a {
         color: white;
-        display: inline-block
+        display: inline-block;
+        transition: color 175ms ease-out;
     }
     
     .nav-menu a:hover {
@@ -681,6 +688,11 @@ footer div {
         height: 3.5rem;
         width: 11rem;
         cursor: pointer;
+        transition: background 175ms ease-out;
+    }
+
+    .button__intro:hover {
+        background-color: hsl(21, 89%, 40%);
     }
 
     .image__capsule {
@@ -776,6 +788,10 @@ footer div {
         display: flex;
         justify-content: space-around;
     }
+
+
+
+    
 
     /* CONTACT SECTION */
 

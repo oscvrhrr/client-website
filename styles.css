@@ -329,8 +329,8 @@ footer {
 .bottom-image img {
     position: absolute;
     width: 8rem;
-    left: 16.5rem;
-    bottom: -63rem;
+    left: 15.2rem;
+    bottom: -57rem;
     border-radius: 5px;
     max-height: 10rem;
 }
@@ -786,7 +786,12 @@ footer div {
 
     .project-flex {
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .project-flex--item {
+        margin: 1.5rem;
     }
 
 

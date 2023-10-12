@@ -480,6 +480,41 @@ footer {
     padding: 1rem 0;
 }
 
+.icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .75rem;
+}
+
+.twitter-icon {
+    background-image: url(./svg-icon/twitter.svg);
+}
+
+.twitter-icon:hover,
+.twitter-icon:focus,
+.linkedin-icon:hover,
+.linkedin-icon:focus,
+.github-icon:hover,
+.github-icon:focus {
+    filter: invert(43%) sepia(50%) saturate(2668%) hue-rotate(353deg) brightness(99%) contrast(91%);
+
+
+
+}
+
+.linkedin-icon {
+    background-image: url(./svg-icon/linkedin.svg);
+}
+
+
+
+.github-icon {
+    background-image: url(./svg-icon/github.svg);
+}
+
+
+
 footer div a .footer-link:hover {
     fill: #F26419;
 }

@@ -318,21 +318,29 @@ footer {
     margin: 0 auto 2rem;
 }
 
-
 .top-image img {
     width: 22rem;
     margin: 0 auto;
-    position: relative;
     border-radius: 5px;
 }
 
-.bottom-image img {
-    position: absolute;
+.top-image  {
+    width: 22rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bottom-image  {
     width: 8rem;
-    left: 15.2rem;
-    bottom: -57rem;
-    border-radius: 5px;
     max-height: 10rem;
+    margin: 0 auto;
+    position: absolute;
+    right: 0%;
+    bottom: -20%;
+}
+
+.bottom img {
+    border-radius: 5px;
 }
 
 .container-about-me p {
@@ -795,13 +803,19 @@ footer div {
         min-width: 50%;
     }
 
-    .bottom-image img {
+    .bottom-image  {
         position: absolute;
         width: auto;
-        left: 5rem;
-        bottom: -73rem;
+        bottom: 0%;
+        left: -50%;
         border-radius: 5px;
         max-height: 20rem;
+    }
+
+    .bottom-image img {
+        max-height: 20rem;
+        width: auto;
+
     }
 
     .image__ellipse {

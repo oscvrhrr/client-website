@@ -34,3 +34,10 @@ const techStack =  document.querySelector('.media-scroller');
 mediaScroller.addEventListener('scroll', () => {
     
 })
+
+const flexProjects = document.querySelector('.project-flex--item');
+const container = document.querySelector('.project--container')
+
+projects.addEventListener('mouseover', () => {
+ 
+})

@@ -31,13 +31,32 @@ function initMap(){
 
 const techStack =  document.querySelector('.media-scroller');
 
-mediaScroller.addEventListener('scroll', () => {
+//let mediaScroller;
+
+//mediaScroller.addEventListener('scroll', () => {
     
-})
+//})
 
 const flexProjects = document.querySelector('.project-flex--item');
 const container = document.querySelector('.project--container')
 
-projects.addEventListener('mouseover', () => {
- 
-})
+
+let text = document.getElementById('interval-text');
+
+let textChangingInterval;
+
+function textInterval() {
+    textChangingInterval = setInterval(changeText,2200);
+} 
+
+
+function changeText() {
+    if(text.innerText === 'I am deeply impassioned by the art of web development.') {
+         text.innerText = 'I am deeply impassioned by the science of web development.'
+    } else {
+         text.innerText = 'I am deeply impassioned by the art of web development.'
+    }
+
+}
+
+textInterval()

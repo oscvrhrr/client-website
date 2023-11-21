@@ -56,7 +56,7 @@ function changeText() {
     } else {
          text.innerText = 'I am deeply impassioned by the art of web development.'
     }
-
+    
 }
 
 textInterval()

@@ -8,7 +8,7 @@
     /* CUSTOM PROPERTIES */
 
 :root {
-    --ff-primary: sans-serif;
+    --ff-primary: 'poppins';
     --ff-secondary: monospace;
 
     --fw-reg: 300;
@@ -106,7 +106,16 @@ footer {
 
 /* NAV BAR STYLES */
 
-.intro {
+.background {
+    background-size: cover;
+    background:
+      radial-gradient(circle farthest-side at 0% 50%,#385238 23.5%,#0000 0)18.9px 27px,
+      radial-gradient(circle farthest-side at 0% 50%,#455f55 24%,#0000 0)17.1px 27px,
+      linear-gradient(#385238 14%,#0000 0, #0000 85%,#385238 0)0 0,
+      linear-gradient(150deg,#385238 24%,#455f55 0,#455f55 26%,#0000 0,#0000 74%,#455f55 0,#455f55 76%,#385238 0)0 0,
+      linear-gradient(30deg,#385238 24%,#455f55 0,#455f55 26%,#0000 0,#0000 74%,#455f55 0,#455f55 76%,#385238 0)0 0,
+      linear-gradient(90deg,#455f55 2%,#385238 0,#385238 98%,#455f55 0%)0 0 #385238;
+    background-size: 36px 54px;
     padding-bottom: 2rem;
     background-color: #385238;
 }
@@ -117,7 +126,7 @@ footer {
     min-height: 5rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #385238;
+    /* background-color: #385238; */
     padding-bottom: .1rem;
 }
 
@@ -507,7 +516,7 @@ footer {
 .copyright {
     margin: 0%;
     padding: 3rem 0 2rem 0;
-    max-width: 16rem;
+    max-width: 18rem;
     font-size: .85rem;
 }
 

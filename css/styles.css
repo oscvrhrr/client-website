@@ -139,7 +139,7 @@ footer {
 .logo-box {
     max-width: 7rem;
     color: white;
-    margin-left: .5rem;
+    margin: 0.5rem 0 0 0.5rem;
 }
 
 
@@ -691,7 +691,7 @@ footer div {
     
     .logo-box {
         max-width: 5.5rem;
-        margin-left: 6.5rem;
+        margin: 1.5rem 0 0 7.5rem;
         max-height: 8.5rem;
     }
     

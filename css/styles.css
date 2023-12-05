@@ -108,16 +108,9 @@ footer {
 
 .background {
     background-size: cover;
-    background:
-      radial-gradient(circle farthest-side at 0% 50%,#385238 23.5%,#0000 0)18.9px 27px,
-      radial-gradient(circle farthest-side at 0% 50%,#455f55 24%,#0000 0)17.1px 27px,
-      linear-gradient(#385238 14%,#0000 0, #0000 85%,#385238 0)0 0,
-      linear-gradient(150deg,#385238 24%,#455f55 0,#455f55 26%,#0000 0,#0000 74%,#455f55 0,#455f55 76%,#385238 0)0 0,
-      linear-gradient(30deg,#385238 24%,#455f55 0,#455f55 26%,#0000 0,#0000 74%,#455f55 0,#455f55 76%,#385238 0)0 0,
-      linear-gradient(90deg,#455f55 2%,#385238 0,#385238 98%,#455f55 0%)0 0 #385238;
-    background-size: 36px 54px;
+    background-image: url('../img/background.png');
     padding-bottom: 2rem;
-    background-color: #385238;
+
 }
 
 .nav-bar {
@@ -137,6 +130,9 @@ footer {
 }
 
 .logo-box {
+    font-weight: 500;
+    line-height: 24px;
+    font-style: italic;
     max-width: 7rem;
     color: white;
     margin: 0.5rem 0 0 0.5rem;
@@ -164,7 +160,7 @@ footer {
     position: absolute;
     width: 100%;
     top: 5.25rem;
-    background-color: #fff;
+
 
 
 }
@@ -176,10 +172,6 @@ footer {
     text-decoration: none;
     color: #232F2B;
 
-}
-
-.nav-menu a:hover {
-    background-color: rgb(223, 251, 219);
 }
 
 .hide {
@@ -240,7 +232,9 @@ footer {
 /*  TECHSTACK SECTION */
 
 .tech-section {
-    background-color: #303030;
+    background-color: #111010;
+    background-image: url('../img/color-sharp.png');
+    background-repeat: no-repeat;
     padding: 4rem 0;
 }
 
@@ -272,6 +266,7 @@ footer {
 
 .media-element p {
     font-size: 1.15rem;
+    color: white;
 }
 
 .tech--stack {
@@ -307,9 +302,11 @@ footer {
 .about-me {
     padding-top: 5rem;
     padding-bottom: 8rem;
-    background-color: #F9EFDC;
+    /* background-color: #111010; */
+    background-color: rgb(21, 21, 21);
     display: flex;
     flex-direction: column;
+    color: white;
     
 }
 
@@ -409,7 +406,8 @@ footer {
 }
 
 .my-projects {
-    background-color: #385238;
+    /* background-color: #111010; */
+    background-color: rgb(21, 21, 21);
     min-height: 70rem;
 }
 
@@ -453,7 +451,9 @@ footer {
 }
 
 .contact-me {
-    background-color: #F9EFDC;
+    /* background-color: #111010; */
+    background-color: rgb(21, 21, 21);
+    color: white;
 }
 
 .container--map {
@@ -528,7 +528,8 @@ footer {
 
 .footer-logo {
     max-width: 8rem;
-    padding: 1rem 0;
+    padding: 3rem 0 3rem 0;
+    font-style: italic;
 }
 
 .icon {
@@ -577,7 +578,10 @@ footer {
     justify-content: end;
     min-height: 15rem;
     padding-bottom: 1rem;
-
+    background-color: #111010;
+    background-image: url('../img/backfill.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer div {
@@ -699,7 +703,6 @@ footer div {
     .nav-menu {
         position: static;
         display: flex;
-        background-color: #385238;
         width: 31rem;
         justify-content: space-around;
         padding: 1rem 4rem 0 0;
@@ -714,7 +717,6 @@ footer div {
     
     .nav-menu a:hover {
         color: #F26419;
-        background-color: #385238;
     }
     
 

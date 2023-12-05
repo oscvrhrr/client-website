@@ -113,13 +113,21 @@ footer {
 
 }
 
+.dynamic-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: #111010;
+    transition: all 250ms;
+
+}
 .nav-bar {
     position: relative;
     display: flex;
     min-height: 5rem;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #385238; */
+    background-color: transparent;
     padding-bottom: .1rem;
 }
 
@@ -172,6 +180,7 @@ footer {
     text-decoration: none;
     color: #232F2B;
 
+
 }
 
 .hide {
@@ -183,7 +192,7 @@ footer {
 
 .section--title__intro {
     margin: auto ;
-    padding-top: 1rem;
+    padding-top: 8rem;
     min-width: 20rem;
     font-size: 2.7rem;
     text-align: center;
@@ -320,7 +329,7 @@ footer {
     
     opacity: 1;
     transform: translate3d(0,0,0);
-    transition: opacity 900ms ease-in 500ms, transform 1000ms ease-in 500ms;
+    transition: opacity 900ms ease-in 200ms, transform 1000ms ease-in 200ms;
 }
 
 
@@ -358,7 +367,7 @@ footer {
     position: relative;
     opacity: 1;
     transform: translate3d(0,0,0);
-    transition: opacity 900ms ease-in 500ms, transform 1000ms ease-in 500ms;
+    transition: opacity 900ms ease-in 200ms, transform 1000ms ease-in 200ms;
 }
 
 /* .top-image {
@@ -412,6 +421,24 @@ footer {
     position: relative;
 }
 
+.project-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 79.25rem;
+    padding-bottom: 7rem;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(0,175px,0);
+}
+
+.project-active {
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    transition: opacity 900ms ease-in 500ms, transform 900ms ease-in 500ms;
+}
+
 .curtain{
     background-image: url('../img/backfill.png');
     background-repeat: no-repeat;
@@ -438,20 +465,14 @@ footer {
     min-height: 70rem;
 }
 
-.project-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    min-height: 79.25rem;
-    padding-bottom: 7rem;
-}
+
 
 .section--title__projects {
     text-align: center;
     padding: 5rem 0;
     padding-bottom: 8rem;
     font-size: 1.5rem;
-    color: #F9EFDC;
+    color: white;
 }
 
 .project--container {
@@ -516,6 +537,7 @@ footer {
 .section--subtitle__title {
     margin: 4rem 0 2rem 2.2rem;
     font-size: 2rem;
+
 }
 
 .form-container {
@@ -713,20 +735,30 @@ footer div {
     
     .logo-box {
         min-width: 10rem ;
-        
         margin: 0%;
         padding: 0%;
         margin-left: 3rem;
 
     }
+    
+    .dynamic-nav{
+        position: fixed;
+        background-color: transparent;
+        z-index: 5;
+        width: 100%;
+
+
+    }
+
 
     .nav-bar {
         display: flex;
+        padding-top: .25rem;
     }
     
     .logo-box {
         max-width: 5.5rem;
-        margin: 1.5rem 0 0 7.5rem;
+        margin: 0 0 0 7.5rem;
         max-height: 8.5rem;
     }
     
@@ -736,8 +768,9 @@ footer div {
         display: flex;
         width: 31rem;
         justify-content: space-around;
-        padding: 1rem 4rem 0 0;
-        font-weight: 900;
+        padding: 0 4rem 0 0;
+        font-weight: 400;
+        font-size: 1rem;
     }
     
     .nav-menu a {
@@ -772,15 +805,17 @@ footer div {
     
     .section--title__intro {
         grid-area: 2 / 2 / 2 / span 4 ;
-        margin: 0%;
+        margin: 1rem 0 0 .5rem;
         text-align: left;
-        font-size: 4.5rem;
+        font-size: 4.25rem;
         min-width: 30rem;
+        padding-top: 1rem;
+
     }
 
     .paragraph__intro{
         grid-area: 3 / 2 / 3 / span 3;
-        margin: 0%;
+        margin: 0 0 0 .5rem;
         text-align: left;
         min-width: 30rem;
         font-size: 1.5rem;
@@ -793,8 +828,8 @@ footer div {
     }
 
     .container--button__intro {
-        grid-area: 3 / 1 / 3 / span 3 ;
-        margin: 5.5rem 0 0 5rem;
+        grid-area: 3 / 1 / span 1 / span 3 ;
+        margin: 7rem 0 0 5.5rem;
     }
 
     .button__intro {
@@ -816,7 +851,7 @@ footer div {
 
     .image__capsule {
         grid-area: 1 / 5 / span 5 / span 3 ;
-        margin: 2rem 1rem 0 0;
+        margin:  8rem 1rem 0 0;
         height: 31.75rem;
         width: 24rem;
         border-radius: 275px 275px 5px 5px;

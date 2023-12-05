@@ -1,12 +1,3 @@
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navMenu = document.querySelector('.nav-menu');
-
-hamburgerMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('hide');
-})
-
-
-
 function initMap(){
 
     // MAP OPTIONS
@@ -29,32 +20,54 @@ function initMap(){
 
 }
 
+let topOfPage = document.getElementById('Home')
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-menu');
+let dynamicNav = document.getElementsByClassName('dynamic-nav')[0];
 const techStack =  document.querySelector('.media-scroller');
-
-//let mediaScroller;
-
-//mediaScroller.addEventListener('scroll', () => {
-    
-//})
-
+let imgSlide = document.getElementsByClassName('top-image')[0];
+let aboutSlide = document.getElementsByClassName('container-about-me')[0];
+let projects = document.getElementsByClassName('project-flex')[0];
+let aboutBottom = document.getElementsByClassName('container-about-me')[0];
 const flexProjects = document.querySelector('.project-flex--item');
 const container = document.querySelector('.project--container')
 
 
-let imgSlide = document.getElementsByClassName('top-image')[0];
-let aboutSlide = document.getElementsByClassName('container-about-me')[0];
-
-
-
-
-window.addEventListener('scroll',() => {
-    imgSlide.classList.add('top-image-active')
-    aboutSlide.classList.add('container-about-me-active')
+hamburgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('hide');
 })
 
-// window.addEventListener('load', () => {
-//     imgSlide.classList.add('top-image-active')
-//     aboutSlide.classList.add('container-about-me-active')
-// })
 
+let state = true;
+let checkScroll = () => {
+    if(!topOfPage.getBoundingClientRect().top && state) {
+        dynamicNav.style.backgroundColor = 'transparent'
+        state = false;
+    }
+
+    if(topOfPage.getBoundingClientRect().top && !state) {
+        dynamicNav.style.backgroundColor = 'black'
+        state = true;
+    }
+
+    requestAnimationFrame(checkScroll);
+}
+
+window.addEventListener('scroll', checkScroll);
+checkScroll();
+
+window.addEventListener('scroll',() => {
+    if(techStack.getBoundingClientRect().top <= 0) {
+        imgSlide.classList.add('top-image-active')
+    aboutSlide.classList.add('container-about-me-active')
+    }
+})
+
+window.addEventListener('scroll',() => {
+    if(aboutBottom.getBoundingClientRect().top <= 0) {
+        projects.classList.add('project-active')
+    }
+    
+
+})
 

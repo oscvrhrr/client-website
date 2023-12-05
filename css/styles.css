@@ -210,6 +210,7 @@ footer {
     object-fit: cover ;
     height: 100%;
     width: 100%;
+
 }
 
 .container--button__intro {
@@ -402,8 +403,34 @@ footer {
 
 
 .project-flex--item {
-    padding-bottom: 2rem;
+    height: 22rem;
+    width: 22rem;
+    border-radius: 8px;
+    margin: 0.25rem auto;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px black;
+    position: relative;
 }
+
+.curtain{
+    background-image: url('../img/backfill.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 0;
+    opacity: .9;
+    width: 22rem;
+    visibility: hidden;
+    transition: height .4s ease;
+
+}
+
+.project-flex--item:hover .curtain {
+    height: 22rem;
+    visibility: visible;
+}
+
+
 
 .my-projects {
     /* background-color: #111010; */
@@ -412,7 +439,11 @@ footer {
 }
 
 .project-flex {
-    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 79.25rem;
+    padding-bottom: 7rem;
 }
 
 .section--title__projects {
@@ -881,8 +912,10 @@ footer div {
 
     .project-flex {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-around;
+        min-height: 0;
+        padding: 0 1.85rem 8.5rem;
     }
 
     .project-flex--item {

@@ -31,7 +31,8 @@ let projects = document.getElementsByClassName('project-flex')[0];
 let aboutBottom = document.getElementsByClassName('container-about-me')[0];
 const flexProjects = document.querySelector('.project-flex--item');
 const container = document.querySelector('.project--container')
-
+let arrows = Array.from(document.getElementsByClassName('arrow'));
+let curtains = Array.from(document.getElementsByClassName('curtain'))
 
 hamburgerMenu.addEventListener('click', () => {
     navMenu.classList.toggle('hide');
@@ -70,4 +71,23 @@ window.addEventListener('scroll',() => {
     
 
 })
+
+
+
+curtains.forEach((curtain) => {
+    curtain.addEventListener('mouseover', () => {
+        arrows.forEach((arrow) => {
+        arrow.classList.add('view-img-active')
+   
+        })
+    })
+
+    curtain.addEventListener('mouseout', () => {
+        arrows.forEach((arrow) => {
+        arrow.classList.remove('view-img-active')
+   
+        })
+    })
+})
+
 

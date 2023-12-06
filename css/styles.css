@@ -452,6 +452,35 @@ footer {
 
 }
 
+.curtain-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.view{
+    display: flex;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+
+}
+
+.view img {
+    margin-left: .35rem;
+}
+
+.view-img-active {
+    transform: rotate(-0.10turn);
+    transition: transform 125ms ease-in 300ms;
+
+}
+
+
+
 .project-flex--item:hover .curtain {
     height: 22rem;
     visibility: visible;

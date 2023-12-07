@@ -32,9 +32,9 @@
                 </div>
                 <div class="nav-menu hide">
                     <!-- <li class="nav-item"><a href="#Home" title="Home" class="nav-link">Home</a></li> -->
-                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#About" class="nav-link" title="read about me">About</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link" title="view oscar's projects">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" title="contact oscar">Contact</a></li>
                 </div>
             </nav>
         </header>
@@ -49,8 +49,8 @@
                     <h1 class="section--title section--title__intro">Web<br>Content Editor</h1>
                     <p class=" paragraph__intro" id="interval-text"> I am deeply impassioned by the art of web development. </p>
                     <div class="container--button__intro">   
-                        <a href="#portfolio"><button class="button__intro" aria-label="Contact">PORTFOLIO</button></a>
-                        <a href="#contact"><button class="button__intro" aria-label="Portfolio">CONTACT</button></a>
+                        <a href="#portfolio"><button class="button__intro" aria-label="Portfolio" title="view projects">PORTFOLIO</button></a>
+                        <a href="#contact"><button class="button__intro" aria-label="Contact" title="contact">CONTACT</button></a>
                     </div>
                     <div class="image__capsule"><img class="image__intro" src="./img/hd-image-large.jpg" alt="A portrait of the Oscar"></div>
                     <div class="image-capsule--text"></div>
@@ -114,16 +114,23 @@
                 </article>
                 <aside class="about-me-subcontainer">
                     <ul>
-                        <h3>NAME</h3>
-                        <p>Oscar Herrera</p>
+                        <li>
+                            <h3>NAME</h3>
+                            <p>Oscar Herrera</p>
+                        </li>
                     </ul>
                     <ul>
-                        <h3>EMAIL</h3>
-                        <p>a.oscarherrera@gmail.com</p>
+                        <li>
+                            <h3>EMAIL</h3>
+                            <p>a.oscarherrera@gmail.com</p>
+                        </li>
                     </ul>
                     <ul>
-                        <h3>EMPLOYMENT</h3>
-                        <p>Available</p>
+                        <li>
+                            <h3>EMPLOYMENT</h3>
+                            <p>Available</p>
+
+                        </li>
                     </ul>
                 </aside>
             </div>
@@ -139,7 +146,7 @@
                         <div class="curtain curtain-view">
                             <div class="view">
                                 View project
-                                <img src="./svg-icon/button-arrow.svg" alt="" class="arrow">
+                                <img src="./svg-icon/button-arrow.svg" alt="an arrow" class="arrow">
                             </div>
                         </div>
                         <img class="image--project" src="./img/project-two-large.jpg" alt="An image of freelance project">
@@ -151,7 +158,7 @@
                         <div class="curtain curtain-view">
                             <div class="view">
                                 View project
-                                <img src="./svg-icon/button-arrow.svg" alt="" class="arrow">
+                                <img src="./svg-icon/button-arrow.svg" alt="an arrow" class="arrow">
                             </div>
                         </div>
                         <img class="image--project" src="./img/project-three.jpg" alt="An image of freelance project">
@@ -163,7 +170,7 @@
                         <div class="curtain curtain-view">
                             <div class="view">
                                 View project
-                                <img src="./svg-icon/button-arrow.svg" alt="" class="arrow">
+                                <img src="./svg-icon/button-arrow.svg" alt="an arrow" class="arrow">
                             </div>
                         </div>
                         <img class="image--project" src="./img/project1.jpg" alt="An image of freelance project">
@@ -182,10 +189,13 @@
                     <h3 class="section--subtitle__title">Send me a<br>message</h3>
                     <form>
                         <div class="form-container">
-                            <input id="name" class="form-control" placeholder="Name" type="text" minlength="3" maxlength="25"  required>
-                            <input id="email" class="form-control" placeholder="Email" type="email"  required>
-                            <textarea id="message" class="form-control" placeholder="Your Message here" type="message" rows="8" minlength="50" maxlength="150" required></textarea>
-                            <button class="button-form" type="submit">SEND MESSAGE</button>
+                            <label for="name"></label>
+                            <input id="name" class="form-control" placeholder="Name" type="text" minlength="3" maxlength="25" autocomplete="name" required>
+                            <label for="email"></label>
+                            <input id="email" class="form-control" placeholder="Email" type="email" autocomplete="email" required>
+                            <label for="message"></label>
+                            <textarea id="message" class="form-control" placeholder="Your Message here" type="message" rows="8" minlength="50" maxlength="150" autocomplete="off" required></textarea>
+                            <button class="button-form" type="submit" aria-label="Send message">SEND MESSAGE</button>
                         </div>
                     </form>
                 </div>
@@ -198,8 +208,8 @@
             <div class="footer-logo">OSCARDEV</div>
             <div>
                 <a href=""><span class="icon twitter-icon" id="rise"></span></a>
-                <a href="https://www.linkedin.com/in/oscar-herrera-/"><span class="icon linkedin-icon" ></span></a>
-                <a href="https://github.com/oscvrhrr"><span class="icon github-icon" ></span></a>
+                <a href="https://www.linkedin.com/in/oscar-herrera-/" aria-label="Read oscar's indeed"><span class="icon linkedin-icon" ></span></a>
+                <a href="https://github.com/oscvrhrr" aria-label="Read oscar's github"><span class="icon github-icon" ></span></a>
             </div>
             <div class="copyright">
                 All rights reserved © 2023 Oscar Herrera

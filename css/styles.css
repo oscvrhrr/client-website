@@ -5,8 +5,6 @@
 
 }
 
-    /* CUSTOM PROPERTIES */
-
 :root {
     --ff-primary: 'poppins';
     --ff-secondary: monospace;
@@ -47,25 +45,16 @@ body {
     font-size: var(--fs-body);
     margin: 0;
     line-height: 1.6;
-
 }
-
-
 
 img {
     display: block;
     max-width: 100%;
-
-
-
 }
     
-/*  TYPOGRAPHY */
-
 h1,
 h2,
 h3 {
-
     line-height: 1.1;
     margin: 0;
 }
@@ -73,7 +62,6 @@ h3 {
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
-
 
 a {
     text-decoration: none;
@@ -83,7 +71,6 @@ p {
     max-width: 14rem;
     margin: 0 auto;
     font-size: .75rem;
-
 }
 
 li {
@@ -104,20 +91,10 @@ footer {
     align-items: end;
 }
 
-/* NAV BAR STYLES */
-/* 
-.background-mobile {
-    background-size: cover;
-    background-image: url('../img/background-mobile.png');
-    padding-bottom: 2rem;
-
-} */
-
 .background {
     background-size: cover;
     background-image: url('../img/background.png');
     padding-bottom: 2rem;
-
 }
 
 .dynamic-nav{
@@ -126,8 +103,8 @@ footer {
     z-index: 5;
     background-color: #111010;
     transition: all 250ms;
-
 }
+
 .nav-bar {
     position: relative;
     display: flex;
@@ -153,7 +130,6 @@ footer {
     margin: 0.5rem 0 0 0.5rem;
 }
 
-
 .hamburger-menu {
     margin-right: 1rem;
     padding: .75rem .65rem .35rem .65rem;
@@ -175,9 +151,6 @@ footer {
     position: absolute;
     width: 100%;
     top: 5.25rem;
-
-
-
 }
 
 .nav-menu a {
@@ -186,14 +159,11 @@ footer {
     padding: 5px 0;
     text-decoration: none;
     color: #232F2B;
-
-
 }
 
 .hide {
     display: none;
 }
-
 
 /* BEGINING OF INTRO SECTION */
 
@@ -250,7 +220,8 @@ footer {
 
 .tech-section {
     background-color: #111010;
-    background-image: url('../img/color-sharp.png');
+    background-image: url('../img/m-color-sharp100.webp');
+    width: 100%;
     background-repeat: no-repeat;
     padding: 4rem 0;
 }

@@ -91,6 +91,22 @@ footer {
     align-items: end;
 }
 
+@keyframes updownAnimation {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform:  translatey(-10px);
+    }
+}
+
+.astro {
+    display: none;
+    width: 15.8rem;
+    margin-left: 5rem;
+    animation: updownAnimation 4s infinite alternate ease-in-out;
+}
+
 .background {
     background-size: cover;
     background-image: url('../img/background.png');
@@ -740,8 +756,17 @@ footer div {
 /* DESKTOP LAYOUT */
 
 @media only screen and (min-width:1024px) and (max-width:1925px) {
-
     
+    
+    .astro {
+        display: block;
+        grid-area: 3 / 6 / 3 / 6 ;
+        width: 15.8rem;
+        margin-left: 12.5rem;
+        animation: updownAnimation 4s infinite alternate ease-in-out;
+        /* animation: upDownAnimation 4s infinite alternate ease-in-out; */
+
+    }
     .logo-box {
         min-width: 10rem ;
         margin: 0%;
@@ -819,7 +844,17 @@ footer div {
         font-size: 4.25rem;
         min-width: 30rem;
         padding-top: 1rem;
+    }
 
+    .subtext {
+        grid-area: 2 / 2 / 2 / span 4 ;
+        margin: 1rem 0 0 .5rem;
+        text-align: left;
+        font-size: 4.25rem;
+        min-width: 30rem;
+        padding-top: 1rem;
+        margin-top: 5rem;
+        color: white;
     }
 
     .paragraph__intro{
@@ -881,6 +916,10 @@ footer div {
 
     /* ABOUT ME SECTION--DESKTOP*/
 
+    ul {
+        padding-left: 0;
+    }
+    
     .about-me {
         flex-direction:row;
     }

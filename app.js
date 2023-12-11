@@ -12,6 +12,7 @@ const container = document.querySelector('.project--container')
 let arrows = Array.from(document.getElementsByClassName('arrow'));
 let curtains = Array.from(document.getElementsByClassName('curtain'))
 
+
 hamburgerMenu.addEventListener('click', () => {
     navMenu.classList.toggle('hide');
 })
@@ -66,6 +67,22 @@ curtains.forEach((curtain) => {
     })
 })
 
+document.addEventListener('DOMContentLoaded', function() {
+    let textToType = "I am deeply impassioned by the art of web development.";
+    let typedElement = document.getElementsByClassName('paragraph__intro')[0];
+    let index = 0;
+    function typeText() {
+      if (index < textToType.length) {
+        typedElement.textContent += textToType.charAt(index);
+        index++;
+        setTimeout(typeText, 80);
+      }
+    }
+
+    typeText();
+});
+  
+
 function initMap(){
 
     // MAP OPTIONS
@@ -87,3 +104,5 @@ function initMap(){
     })
 
 }
+
+

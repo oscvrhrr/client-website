@@ -77,6 +77,10 @@ li {
     list-style: none;
 }
 
+ul {
+    padding: 0;
+}
+
 figcaption {
     text-align: center;
     font-size: .55rem;
@@ -98,6 +102,10 @@ footer {
     100% {
         transform:  translatey(-10px);
     }
+}
+
+.scroll {
+    display: none;
 }
 
 .astro {
@@ -979,6 +987,7 @@ footer div {
     }
 
     .scroll {
+        display: block;
         height: 11rem;
         position: absolute;
         right: 53%;

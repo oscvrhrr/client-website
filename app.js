@@ -81,6 +81,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
     typeText();
 });
+
+// document.addEventListener("DOMContentLoaded", function() {
+
+//     const rotatingElement = document.getElementsByClassName('scroll')[0];
+  
+//     window.addEventListener('scroll', function() {
+//       // Calculate the rotation angle based on the scroll position
+//       let rotationfactor = 0.2;
+//       const rotationAngle = window.scrollY * rotationfactor;
+  
+//       // Apply the rotation to the element
+//       rotatingElement.style.transform = `translate(-50%, -50%) rotate(${rotationAngle}deg)`;
+//     });
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const rotatingElement = document.getElementsByClassName('scroll')[0];
+    let rotationAngle = 0;
+  
+    function updateRotation() {
+      // Calculate the rotation angle based on the scroll position with a reduced factor
+      const rotationFactor = 0.2; // Adjust this value to control the rotation speed
+      rotationAngle = window.scrollY * rotationFactor;
+  
+      // Apply the rotation to the element
+      rotatingElement.style.transform = `translate(-50%, -50%) rotate(${rotationAngle}deg)`;
+  
+      // Request the next animation frame
+      requestAnimationFrame(updateRotation);
+    }
+  
+    // Initial rotation setup
+    updateRotation();
+  });
   
 
 function initMap(){
@@ -104,5 +138,3 @@ function initMap(){
     })
 
 }
-
-

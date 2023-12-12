@@ -978,6 +978,15 @@ footer div {
 
     }
 
+    .scroll {
+        height: 11rem;
+        position: absolute;
+        right: 53%;
+        top: 245%;
+        transform: translate(-50, -50%);
+        transition: transform 0.1s ease-out;
+    }
+
     .image__ellipse {
         height: 14.75rem;
         width: 14.75rem;

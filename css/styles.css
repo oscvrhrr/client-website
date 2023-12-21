@@ -997,6 +997,7 @@ footer div {
   .project-flex {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     min-height: 0;
     padding: 0 1.85rem 8.5rem;

@@ -480,10 +480,14 @@ footer {
   transition: transform 125ms ease-in 300ms;
 }
 
+.project-flex--width {
+  width: 22rem;
+  margin: 0 auto;
+}
+
 .row__tech-box {
   display: flex;
   flex-direction: row;
-  margin-left: 1.5rem;
 }
 
 .tech-box {
@@ -495,16 +499,16 @@ footer {
   margin: 0.25rem;
   padding: 0.2rem 0.5rem;
   line-height: 1.25rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .row__tech-box--paragraph {
   color: white;
   min-width: 17rem;
-  margin: 1rem auto;
-  margin-left: 1.75rem;
-  margin-bottom: 3rem;
+  margin: initial;
+  margin-bottom: 4rem;
   font-size: .875rem;
+
 }
 
 .project-flex--item:hover .curtain {
@@ -1007,7 +1011,7 @@ footer div {
     text-align: left;
   }
 
-  .row_tech-box {
+  .row__tech-box {
     display: flex;
     flex-direction: row;
     margin-left: 1.5rem;
@@ -1025,10 +1029,12 @@ footer div {
     font-size: 0.875rem;
   }
 
-  .row_tech-box_paragraph {
+  .row__tech-box--paragraph {
     color: white;
     font-size: 1.05rem;
-    min-width: 22rem;
+    min-width: 19rem;
+    margin: 1rem auto 5rem;
+
   }
 
   .project-flex {

@@ -480,6 +480,33 @@ footer {
   transition: transform 125ms ease-in 300ms;
 }
 
+.row__tech-box {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1.5rem;
+}
+
+.tech-box {
+  border: 1px solid white;
+  color: white;
+  display: inline-block;
+  flex-direction: row;
+  border-radius: 0.25rem;
+  margin: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.row__tech-box--paragraph {
+  color: white;
+  min-width: 17rem;
+  margin: 1rem auto;
+  margin-left: 1.75rem;
+  margin-bottom: 3rem;
+  font-size: .875rem;
+}
+
 .project-flex--item:hover .curtain {
   height: 22rem;
   visibility: visible;

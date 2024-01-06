@@ -5,13 +5,11 @@ let dynamicNav = document.getElementsByClassName("dynamic-nav")[0];
 const techStack = document.querySelector(".media-scroller");
 let imgSlide = document.getElementsByClassName("top-image")[0];
 let aboutSlide = document.getElementsByClassName("container-about-me")[0];
-let projects = document.getElementsByClassName("project-flex")[0];
 let aboutBottom = document.getElementsByClassName("container-about-me")[0];
-const flexProjects = document.querySelector(".project-flex--item");
-const container = document.querySelector(".project--container");
 let arrows = Array.from(document.getElementsByClassName("arrow"));
 let curtains = Array.from(document.getElementsByClassName("curtain"));
-const projectSection = document.getElementsByClassName('my-projects')[0];
+const projectSection = document.getElementsByClassName("my-projects")[0];
+const project = document.getElementsByClassName("project-flex--width");
 
 hamburgerMenu.addEventListener("click", () => {
   navMenu.classList.toggle("hide");
@@ -44,7 +42,19 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
   if (projectSection.getBoundingClientRect().top <= 0) {
-    projects.classList.add("project-active");
+    project[0].classList.add("project-flex--width--active");
+  }
+  if (project[0].getBoundingClientRect().top <= 0) {
+    project[1].classList.add("project-flex--width--active");
+  }
+  if (project[1].getBoundingClientRect().top <= 0) {
+    project[2].classList.add("project-flex--width--active");
+  }
+  if (project[2].getBoundingClientRect().top <= 0) {
+    project[3].classList.add("project-flex--width--active");
+  }
+  if (project[3].getBoundingClientRect().top <= 0) {
+    project[4].classList.add("project-flex--width--active");
   }
 });
 

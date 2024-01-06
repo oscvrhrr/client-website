@@ -426,6 +426,22 @@ footer {
   overflow: hidden;
   box-shadow: 2px 2px 6px black;
   position: relative;
+  
+}
+
+.project-flex--width {
+  width: 22rem;
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(-50px,0,0);
+}
+
+.project-flex--width--active {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 900ms ease-in 500ms, transform 900ms ease-in 500ms;
 }
 
 .project-flex {
@@ -434,16 +450,7 @@ footer {
   justify-content: space-around;
   min-height: 79.25rem;
   padding-bottom: 7rem;
-  visibility: hidden;
-  opacity: 0;
-  transform: translate3d(-50px,0,0);
-}
-
-.project-active {
-  visibility: visible;
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: opacity 900ms ease-in 500ms, transform 900ms ease-in 500ms;
+  
 }
 
 .curtain {
@@ -480,10 +487,6 @@ footer {
   transition: transform 125ms ease-in 300ms;
 }
 
-.project-flex--width {
-  width: 22rem;
-  margin: 0 auto;
-}
 
 .row__tech-box {
   display: flex;

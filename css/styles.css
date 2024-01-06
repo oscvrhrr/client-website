@@ -232,10 +232,10 @@ footer {
 }
 
 .button__intro {
-  background-color: #ff4f00;
+  background-color: transparent;
   color: white;
-  border: none;
-  border-radius: 4px;
+  border: 1px solid white;
+  border-radius: 1px;
   margin: 0 1rem;
   width: 7.5rem;
   height: 2.75rem;
@@ -455,7 +455,7 @@ footer {
   opacity: 0.9;
   width: 22rem;
   visibility: hidden;
-  transition: height 0.4s ease;
+  transition: height 350ms ease;
 }
 
 .curtain-view {
@@ -499,7 +499,7 @@ footer {
   margin: 0.25rem;
   padding: 0.2rem 0.5rem;
   line-height: 1.25rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .row__tech-box--paragraph {
@@ -507,7 +507,7 @@ footer {
   min-width: 17rem;
   margin: initial;
   margin-bottom: 4rem;
-  font-size: .875rem;
+  font-size: 1rem;
 
 }
 
@@ -670,6 +670,7 @@ footer {
 
 footer div a .footer-link:hover {
   fill: #f26419;
+
 }
 
 footer {
@@ -884,20 +885,24 @@ footer div {
   }
 
   .button__intro {
-    background-color: #ff4f00;
+    background-color: transparent;
     color: white;
-    border: none;
-    border-radius: 4px;
+    border: 1px solid white;
+    border-radius: 1px;
     font-size: 1.1rem;
     font-weight: 900;
     height: 3.5rem;
     width: 11rem;
     cursor: pointer;
     transition: background 175ms ease-out;
+    background-size: cover;
   }
 
   .button__intro:hover {
-    background-color: hsl(21, 89%, 40%);
+    background-color: #f6e8cb;
+    background-color: linear-gradient(to top right, #ffc593, #bc7198, #5a77ff);
+    color: rgb(83, 70, 166);
+    transition: all 165ms ease-in;
   }
 
   .image__capsule {
@@ -1088,8 +1093,18 @@ footer div {
     margin: 1rem 0 0 3rem;
   }
 
+  .icon {
+    transform: translateY(0);
+    transition: transform 175ms ease-in;
+  }
+
+  .icon:hover {
+    transform: translateY(-5px);
+  }
+
   #map {
     height: 25rem;
     width: 100%;
   }
+
 }

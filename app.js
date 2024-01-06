@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (index < textToType.length) {
       typedElement.textContent += textToType.charAt(index);
       index++;
-      setTimeout(typeText, 80);
+      setTimeout(typeText, 65);
     }
   }
 

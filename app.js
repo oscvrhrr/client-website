@@ -34,26 +34,26 @@ window.addEventListener("scroll", checkScroll);
 checkScroll();
 
 window.addEventListener("scroll", () => {
-  if (techStack.getBoundingClientRect().top <= 0) {
+  if (techStack.getBoundingClientRect().top <= 400) {
     imgSlide.classList.add("top-image-active");
     aboutSlide.classList.add("container-about-me-active");
   }
 });
 
 window.addEventListener("scroll", () => {
-  if (projectSection.getBoundingClientRect().top <= 0) {
+  if (projectSection.getBoundingClientRect().top <= 400) {
     project[0].classList.add("project-flex--width--active");
   }
-  if (project[0].getBoundingClientRect().top <= 0) {
+  if (project[0].getBoundingClientRect().top <= 200) {
     project[1].classList.add("project-flex--width--active");
   }
-  if (project[1].getBoundingClientRect().top <= 0) {
+  if (project[1].getBoundingClientRect().top <= 200) {
     project[2].classList.add("project-flex--width--active");
   }
-  if (project[2].getBoundingClientRect().top <= 0) {
+  if (project[2].getBoundingClientRect().top <= 200) {
     project[3].classList.add("project-flex--width--active");
   }
-  if (project[3].getBoundingClientRect().top <= 0) {
+  if (project[3].getBoundingClientRect().top <= 200) {
     project[4].classList.add("project-flex--width--active");
   }
 });

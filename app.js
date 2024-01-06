@@ -11,6 +11,7 @@ const flexProjects = document.querySelector(".project-flex--item");
 const container = document.querySelector(".project--container");
 let arrows = Array.from(document.getElementsByClassName("arrow"));
 let curtains = Array.from(document.getElementsByClassName("curtain"));
+const projectSection = document.getElementsByClassName('my-projects')[0];
 
 hamburgerMenu.addEventListener("click", () => {
   navMenu.classList.toggle("hide");
@@ -42,7 +43,7 @@ window.addEventListener("scroll", () => {
 });
 
 window.addEventListener("scroll", () => {
-  if (aboutBottom.getBoundingClientRect().top <= 0) {
+  if (projectSection.getBoundingClientRect().top <= 0) {
     projects.classList.add("project-active");
   }
 });

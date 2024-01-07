@@ -10,6 +10,8 @@ let arrows = Array.from(document.getElementsByClassName("arrow"));
 let curtains = Array.from(document.getElementsByClassName("curtain"));
 const projectSection = document.getElementsByClassName("my-projects")[0];
 const project = document.getElementsByClassName("project-flex--width");
+const skill = document.getElementsByClassName('media-element')[0];
+let hasScrolled = false;
 
 hamburgerMenu.addEventListener("click", () => {
   navMenu.classList.toggle("hide");
@@ -32,6 +34,16 @@ let checkScroll = () => {
 
 window.addEventListener("scroll", checkScroll);
 checkScroll();
+
+window.addEventListener('scroll', () => {
+  if(techStack.getBoundingClientRect().top <= 400 && !hasScrolled) {
+    techStack.scrollTo({
+      left: techStack.scrollLeft + 240,
+      behavior: 'smooth'
+    });
+    hasScrolled = true;
+  }
+})
 
 window.addEventListener("scroll", () => {
   if (techStack.getBoundingClientRect().top <= 400) {
@@ -80,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (index < textToType.length) {
       typedElement.textContent += textToType.charAt(index);
       index++;
-      setTimeout(typeText, 65);
+      setTimeout(typeText, 60);
     }
   }
 

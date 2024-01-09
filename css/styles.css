@@ -334,13 +334,13 @@ footer {
 
 .container-about-me {
   opacity: 0;
-  transform: translate3d(-70px, 0, 0);
+  transform: translate3d(-50px, 0, 0);
 }
 
 .container-about-me-active {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition: opacity 900ms ease-in 200ms, transform 1000ms ease-in 200ms;
+  transition: opacity 900ms ease-in 200ms, transform 900ms ease-in 200ms;
 }
 
 .section--title__about-me {
@@ -367,7 +367,7 @@ footer {
   margin: 0 auto;
   position: relative;
   opacity: 0;
-  transform: translate3d(-70px, 0, 0);
+  transform: translate3d(-50px, 0, 0);
 }
 .top-image-active {
   width: 22rem;
@@ -375,7 +375,7 @@ footer {
   position: relative;
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition: opacity 900ms ease-in 200ms, transform 1000ms ease-in 200ms;
+  transition: opacity 900ms ease-in 200ms, transform 900ms ease-in 200ms;
 }
 
 /* .top-image {
@@ -441,7 +441,7 @@ footer {
   visibility: visible;
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition: opacity 900ms ease-in 500ms, transform 900ms ease-in 500ms;
+  transition: opacity 1000ms ease-in 100ms, transform 900ms ease-in 100ms ;
 }
 
 .project-flex {
@@ -1052,10 +1052,31 @@ footer div {
     justify-content: space-around;
     min-height: 0;
     padding: 0 1.85rem 8.5rem;
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .project-flex--active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 900ms ease-in 100ms;
   }
 
   .project-flex--item {
     margin: 1.5rem;
+  }
+
+  .project-flex--width {
+    width: 22rem;
+    margin: 0 auto;
+    visibility: visible;
+    opacity: 1;
+    transform: initial;
+  }
+  
+  .project-flex--width--active {
+    visibility: initial;
+    transition: initial;
   }
 
   /* CONTACT SECTION */

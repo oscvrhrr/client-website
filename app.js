@@ -10,6 +10,7 @@ let arrows = Array.from(document.getElementsByClassName("arrow"));
 let curtains = Array.from(document.getElementsByClassName("curtain"));
 const projectSection = document.getElementsByClassName("my-projects")[0];
 const project = document.getElementsByClassName("project-flex--width");
+const desktopProjects = document.getElementsByClassName('project-flex')[0];
 const skill = document.getElementsByClassName('media-element')[0];
 let hasScrolled = false;
 
@@ -56,17 +57,23 @@ window.addEventListener("scroll", () => {
   if (projectSection.getBoundingClientRect().top <= 400) {
     project[0].classList.add("project-flex--width--active");
   }
-  if (project[0].getBoundingClientRect().top <= 200) {
+  if (project[0].getBoundingClientRect().top <= 0) {
     project[1].classList.add("project-flex--width--active");
   }
-  if (project[1].getBoundingClientRect().top <= 200) {
+  if (project[1].getBoundingClientRect().top <= 0) {
     project[2].classList.add("project-flex--width--active");
   }
-  if (project[2].getBoundingClientRect().top <= 200) {
+  if (project[2].getBoundingClientRect().top <= 0) {
     project[3].classList.add("project-flex--width--active");
   }
-  if (project[3].getBoundingClientRect().top <= 200) {
+  if (project[3].getBoundingClientRect().top <= 0) {
     project[4].classList.add("project-flex--width--active");
+  }
+});
+
+window.addEventListener("scroll", () => {
+  if (projectSection.getBoundingClientRect().top <= 400) {
+    desktopProjects.classList.add("project-flex--active");
   }
 });
 

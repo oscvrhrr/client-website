@@ -199,9 +199,14 @@ footer {
   margin: auto;
   padding-top: 8rem;
   min-width: 20rem;
-  font-size: 2.7rem;
+  font-size: 2rem;
   text-align: center;
   color: white;
+}
+
+.font--small {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .paragraph__intro {
@@ -851,11 +856,20 @@ footer div {
 
   .section--title__intro {
     grid-area: 2 / 2 / 2 / span 4;
-    margin: 1rem 0 0 0.5rem;
+    margin: 0 0 0 0.5rem;
     text-align: left;
-    font-size: 4.25rem;
+    /* font-size: 4.25rem; */
+    font-size: 3.25rem;
+    letter-spacing: 1.15px;
     min-width: 30rem;
     padding-top: 1rem;
+    font-weight: 600;
+
+  }
+
+  .font--small {
+    font-size: 2rem;
+    font-weight: 300;
   }
 
   .subtext {

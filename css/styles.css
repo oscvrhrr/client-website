@@ -266,6 +266,7 @@ footer {
   display: flex;
   align-items: center;
   overflow-x: auto;
+  scrollbar-color: transparent transparent;
 }
 
 .media-scroller::-webkit-scrollbar {

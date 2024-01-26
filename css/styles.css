@@ -654,8 +654,9 @@ footer {
   margin: 0.75rem;
 }
 
-.twitter-icon {
-  background-image: url(/svg-icon/twitter.svg);
+.codewars-icon {
+  background-image: url(/svg-icon/codewars.svg);
+  background-size:cover ;
 }
 
 .twitter-icon:hover,

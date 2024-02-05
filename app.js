@@ -1,3 +1,5 @@
+
+
 let topOfPage = document.getElementById("Home");
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const navMenu = document.querySelector(".nav-menu");
@@ -140,7 +142,9 @@ document.addEventListener("DOMContentLoaded", function () {
   updateRotation();
 });
 
-function initMap() {
+
+
+ async function  initMap() {
   // MAP OPTIONS
   const options = {
     center: { lat: 41.8781, lng: -87.6298 },

@@ -249,7 +249,7 @@ footer {
 }
 
 .paragraph__intro {
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 /*  TECHSTACK SECTION */
@@ -432,7 +432,6 @@ footer {
   overflow: hidden;
   box-shadow: 2px 2px 6px black;
   position: relative;
-  
 }
 
 .project-flex--width {
@@ -440,14 +439,14 @@ footer {
   margin: 0 auto;
   visibility: hidden;
   opacity: 0;
-  transform: translate3d(-50px,0,0);
+  transform: translate3d(-50px, 0, 0);
 }
 
 .project-flex--width--active {
   visibility: visible;
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition: opacity 1000ms ease-in 100ms, transform 900ms ease-in 100ms ;
+  transition: opacity 1000ms ease-in 100ms, transform 900ms ease-in 100ms;
 }
 
 .project-flex {
@@ -456,7 +455,6 @@ footer {
   justify-content: space-around;
   min-height: 79.25rem;
   padding-bottom: 7rem;
-  
 }
 
 .curtain {
@@ -493,7 +491,6 @@ footer {
   transition: transform 125ms ease-in 300ms;
 }
 
-
 .row__tech-box {
   display: flex;
   flex-direction: row;
@@ -517,7 +514,6 @@ footer {
   margin: initial;
   margin-bottom: 4rem;
   font-size: 1rem;
-
 }
 
 .project-flex--item:hover .curtain {
@@ -657,7 +653,7 @@ footer {
 
 .codewars-icon {
   background-image: url(/svg-icon/codewars.svg);
-  background-size:cover ;
+  background-size: cover;
 }
 
 .twitter-icon:hover,
@@ -680,7 +676,6 @@ footer {
 
 footer div a .footer-link:hover {
   fill: #f26419;
-
 }
 
 footer {
@@ -866,7 +861,6 @@ footer div {
     min-width: 30rem;
     padding-top: 1rem;
     font-weight: 600;
-
   }
 
   .font--small {
@@ -944,8 +938,6 @@ footer div {
     min-width: 8rem;
     margin: 2rem 5rem;
   }
-
-  
 
   /* ABOUT ME SECTION--DESKTOP*/
 
@@ -1058,7 +1050,6 @@ footer div {
     font-size: 1.05rem;
     min-width: 19rem;
     margin: 1rem auto 5rem;
-
   }
 
   .project-flex {
@@ -1089,7 +1080,7 @@ footer div {
     opacity: 1;
     transform: initial;
   }
-  
+
   .project-flex--width--active {
     visibility: initial;
     transition: initial;
@@ -1146,5 +1137,4 @@ footer div {
     height: 25rem;
     width: 100%;
   }
-
 }

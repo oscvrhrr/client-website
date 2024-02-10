@@ -1,5 +1,3 @@
-
-
 let topOfPage = document.getElementById("Home");
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const navMenu = document.querySelector(".nav-menu");
@@ -12,8 +10,8 @@ let arrows = Array.from(document.getElementsByClassName("arrow"));
 let curtains = Array.from(document.getElementsByClassName("curtain"));
 const projectSection = document.getElementsByClassName("my-projects")[0];
 const project = document.getElementsByClassName("project-flex--width");
-const desktopProjects = document.getElementsByClassName('project-flex')[0];
-const skill = document.getElementsByClassName('media-element')[0];
+const desktopProjects = document.getElementsByClassName("project-flex")[0];
+const skill = document.getElementsByClassName("media-element")[0];
 let hasScrolled = false;
 
 hamburgerMenu.addEventListener("click", () => {
@@ -38,15 +36,15 @@ let checkScroll = () => {
 window.addEventListener("scroll", checkScroll);
 checkScroll();
 
-window.addEventListener('scroll', () => {
-  if(techStack.getBoundingClientRect().top <= 400 && !hasScrolled) {
+window.addEventListener("scroll", () => {
+  if (techStack.getBoundingClientRect().top <= 400 && !hasScrolled) {
     techStack.scrollTo({
       left: techStack.scrollLeft + 240,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
     hasScrolled = true;
   }
-})
+});
 
 window.addEventListener("scroll", () => {
   if (techStack.getBoundingClientRect().top <= 400) {
@@ -142,9 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
   updateRotation();
 });
 
-
-
- async function  initMap() {
+async function initMap() {
   // MAP OPTIONS
   const options = {
     center: { lat: 41.8781, lng: -87.6298 },

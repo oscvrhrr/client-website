@@ -1172,4 +1172,10 @@ footer div {
     width: 7rem;
 
   }
+  .container-about-me article {
+    max-width: 56rem;
+  }
+  .scroll {
+    top: 200%;
+  }
 }

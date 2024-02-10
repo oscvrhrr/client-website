@@ -1138,3 +1138,38 @@ footer div {
     width: 100%;
   }
 }
+
+@media only screen and (min-width: 1600px) and (max-width: 1950px) {
+  .section--title__intro,
+  .paragraph__intro {
+    margin-left: 5rem;
+  }
+
+  .logo-box {
+    margin-left: 12rem;
+    font-size: 1.25rem;
+  }
+  .button__intro {
+    width: 11.5rem;
+  }
+  .nav-link { 
+    font-size: 1.25rem;
+  }
+
+  .nav-menu {
+    width: 43rem;
+  }
+
+  .section--title__intro {
+    font-size: 4rem;
+  }
+  .image__capsule {
+    height: 39rem;
+    width: 30rem;
+  }
+  .media-element img {
+    height: 7rem ;
+    width: 7rem;
+
+  }
+}

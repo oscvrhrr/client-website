@@ -106,6 +106,14 @@ document.addEventListener("DOMContentLoaded", function () {
   typeText();
 });
 
+
+const projectElement = document.getElementsByClassName('my-projects')[0];
+const iso = new Isotope(projectElement, {
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+
 // document.addEventListener("DOMContentLoaded", function() {
 
 //     const rotatingElement = document.getElementsByClassName('scroll')[0];

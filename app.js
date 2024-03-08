@@ -107,12 +107,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const projectElement = document.getElementsByClassName('my-projects')[0];
-const iso = new Isotope(projectElement, {
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
-});
+// const projectElement = document.getElementsByClassName('my-projects')[0];
+// const iso = new Isotope(projectElement, {
+//   // options
+//   itemSelector: '.grid-item',
+//   layoutMode: 'fitRows'
+// });
 
 // document.addEventListener("DOMContentLoaded", function() {
 
